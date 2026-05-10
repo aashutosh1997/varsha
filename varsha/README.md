@@ -1,6 +1,6 @@
 # Varsha — iOS Workout App
 
-A SwiftUI iOS app that runs a structured workout session with timed/rep-based sets, automatic progression, screen-always-on, and embedded form-demonstration media (Lottie animation preferred, MP4 video fallback). Built around a PCOS-tailored training plan.
+A SwiftUI iOS app that runs a structured workout session with timed/rep-based sets, automatic progression, screen-always-on, and embedded form-demonstration media (MP4 video, animated GIF, or two-frame fallback). Built around a PCOS-tailored training plan.
 
 ## Tech Stack
 
@@ -10,7 +10,6 @@ A SwiftUI iOS app that runs a structured workout session with timed/rep-based se
 | UI | SwiftUI (iOS 17+) | Reactive UI, less boilerplate, `@Observable` |
 | State | `ObservableObject` + `@Published` | Battle-tested, Combine integration |
 | Persistence (later) | SwiftData | Native Codable, less ceremony than CoreData |
-| Animation | [Lottie iOS](https://github.com/airbnb/lottie-ios) (SPM) | When a Lottie file exists |
 | Video | `AVKit` / `AVPlayer` | Native, low overhead |
 | Audio cues | `AudioServicesPlaySystemSound` + `UINotificationFeedbackGenerator` | No extra deps |
 | Health (later) | HealthKit | Log workouts, calories |
@@ -30,7 +29,7 @@ Varsha/
 │   ├── WeekScheduleView.swift    ← Pick a day
 │   ├── WorkoutDetailView.swift   ← Preview before starting
 │   ├── ActiveWorkoutView.swift   ← The live workout UI
-│   ├── ExerciseMediaView.swift   ← Lottie / video / GIF / two-frame fallback
+│   ├── ExerciseMediaView.swift   ← video / GIF / two-frame fallback
 │   └── AnimatedGIFView.swift     ← Native ImageIO GIF player
 ├── Data/
 │   └── WorkoutData.swift         ← The PCOS plan as data
@@ -73,8 +72,6 @@ The user said "option to reset once it has started." Two resets, both wired:
 ### 5. Media: progressive fallback
 
 ```
-Exercise.lottieName           →  exists in bundle?       Lottie player
-        ↓ no
 Exercise.videoURL             →  set?                    AVPlayer (looped, muted)
         ↓ no
 Bundle: ExerciseMedia/{id}.gif                           AnimatedGIFView (ExerciseDB)
@@ -139,7 +136,6 @@ To upgrade a specific exercise to higher fidelity, set the appropriate field on 
 
 | Field | Effect |
 |---|---|
-| `lottieName: "back-squat"` (with `back-squat.json` in bundle) | Lottie wins |
 | `videoURLString: "..."` | Self-recorded video wins over GIF |
 | Bundled `back-squat.gif` exists | Animated GIF (default for matched exercises) |
 | Bundled `back-squat-0.jpg` + `back-squat-1.jpg` exist | Two-frame animator (fallback) |
@@ -171,7 +167,6 @@ The viral nature of AGPL is inherited from ExerciseDB v1, whose GIF dataset is b
 
 - **[ExerciseDB v1](https://github.com/ExerciseDB/exercisedb-api)** by AscendAPI — animated GIF demonstrations (AGPL-3.0)
 - **[yuhonas/free-exercise-db](https://github.com/yuhonas/free-exercise-db)** — start/end position photos (public domain)
-- **[airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)** — optional, for Lottie animations
 
 ## Critical iOS Specifics
 
@@ -189,13 +184,12 @@ Last 3 seconds of rest: tick haptic each second. Set complete: success haptic. R
 ## Build Order (suggested)
 
 1. Drop in the Swift files from this repo
-2. Add Lottie via Swift Package Manager (`https://github.com/airbnb/lottie-ios`)
-3. Run on simulator — should work end-to-end with placeholder media
-4. Sign up for ExerciseDB, write a small script to download GIFs → convert to MP4 → upload to your CDN
-5. Update `WorkoutData.swift` with real video URLs
-6. Add SwiftData persistence for workout history
-7. Add HealthKit integration
-8. Build the Apple Watch companion (Workout API)
+2. Run on simulator — should work end-to-end with placeholder media
+3. Sign up for ExerciseDB, write a small script to download GIFs → convert to MP4 → upload to your CDN
+4. Update `WorkoutData.swift` with real video URLs
+5. Add SwiftData persistence for workout history
+6. Add HealthKit integration
+7. Build the Apple Watch companion (Workout API)
 
 ## Xcode-side Rename (one-time)
 
@@ -224,7 +218,7 @@ After all of that, `Cmd+B` should build clean and the simulator's home screen sh
 - `Services/WorkoutSessionManager.swift` — State machine + timer
 - `Services/ScreenWakeModifier.swift` — Keep screen on
 - `Views/ActiveWorkoutView.swift` — The main workout screen
-- `Views/ExerciseMediaView.swift` — Lottie/video player with fallback
+- `Views/ExerciseMediaView.swift` — Video/GIF player with fallback
 - `Views/WeekScheduleView.swift` — Day picker
 - `Views/WorkoutDetailView.swift` — Pre-workout preview
 - `Data/WorkoutData.swift` — The PCOS plan as Swift data
