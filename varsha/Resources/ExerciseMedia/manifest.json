@@ -1,0 +1,492 @@
+{
+  "assisted-pullup": {
+    "files": [
+      "assisted-pullup-0.jpg",
+      "assisted-pullup-1.jpg"
+    ],
+    "freedb_id": "Pullups",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "back-squat": {
+    "files": [
+      "back-squat-0.jpg",
+      "back-squat-1.jpg"
+    ],
+    "freedb_id": "Barbell_Squat",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "banded-kickback": {
+    "files": [
+      "banded-kickback-0.jpg",
+      "banded-kickback-1.jpg"
+    ],
+    "freedb_id": "Glute_Kickback",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "barbell-row": {
+    "files": [
+      "barbell-row-0.jpg",
+      "barbell-row-1.jpg"
+    ],
+    "freedb_id": "Bent_Over_Barbell_Row",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "bench-dip": {
+    "edb_name": "bench dip on floor",
+    "files": [
+      "bench-dip.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "bench-press": {
+    "files": [
+      "bench-press-0.jpg",
+      "bench-press-1.jpg"
+    ],
+    "freedb_id": "Barbell_Bench_Press_-_Medium_Grip",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "bike-sprint": {
+    "edb_name": "stationary bike walk",
+    "files": [
+      "bike-sprint.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "bulgarian-split-squat": {
+    "files": [
+      "bulgarian-split-squat-0.jpg",
+      "bulgarian-split-squat-1.jpg"
+    ],
+    "freedb_id": "Split_Squats",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "cable-curl": {
+    "files": [
+      "cable-curl-0.jpg",
+      "cable-curl-1.jpg"
+    ],
+    "freedb_id": "Cable_Hammer_Curls_-_Rope_Attachment",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "cable-pull-through": {
+    "files": [
+      "cable-pull-through-0.jpg",
+      "cable-pull-through-1.jpg"
+    ],
+    "freedb_id": "Pull_Through",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "cable-row": {
+    "files": [
+      "cable-row-0.jpg",
+      "cable-row-1.jpg"
+    ],
+    "freedb_id": "Seated_Cable_Rows",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "calf-raise": {
+    "edb_name": "barbell standing calf raise",
+    "files": [
+      "calf-raise.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "chest-supported-row": {
+    "edb_name": "dumbbell incline row",
+    "files": [
+      "chest-supported-row.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "curtsy-lunge": {
+    "files": [
+      "curtsy-lunge-0.jpg",
+      "curtsy-lunge-1.jpg"
+    ],
+    "freedb_id": "Crossover_Reverse_Lunge",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "db-bench": {
+    "files": [
+      "db-bench-0.jpg",
+      "db-bench-1.jpg"
+    ],
+    "freedb_id": "Dumbbell_Bench_Press",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "db-curl": {
+    "edb_name": "dumbbell bicep curl lunge with bowling motion",
+    "files": [
+      "db-curl.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "db-rdl": {
+    "files": [
+      "db-rdl-0.jpg",
+      "db-rdl-1.jpg"
+    ],
+    "freedb_id": "Romanian_Deadlift",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "db-shoulder-press": {
+    "files": [
+      "db-shoulder-press-0.jpg",
+      "db-shoulder-press-1.jpg"
+    ],
+    "freedb_id": "Dumbbell_Shoulder_Press",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "dead-bug": {
+    "files": [
+      "dead-bug-0.jpg",
+      "dead-bug-1.jpg"
+    ],
+    "freedb_id": "Dead_Bug",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "farmer-carry": {
+    "files": [
+      "farmer-carry-0.jpg",
+      "farmer-carry-1.jpg"
+    ],
+    "freedb_id": "Farmers_Walk",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "glute-bridge": {
+    "edb_name": "glute bridge two legs on bench (male)",
+    "files": [
+      "glute-bridge.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "glute-kickback": {
+    "files": [
+      "glute-kickback-0.jpg",
+      "glute-kickback-1.jpg"
+    ],
+    "freedb_id": "Cable_Hip_Adduction",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "goblet-squat": {
+    "files": [
+      "goblet-squat-0.jpg",
+      "goblet-squat-1.jpg"
+    ],
+    "freedb_id": "Goblet_Squat",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "hack-squat": {
+    "edb_name": "barbell hack squat",
+    "files": [
+      "hack-squat.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "ham-curl": {
+    "files": [
+      "ham-curl-0.jpg",
+      "ham-curl-1.jpg"
+    ],
+    "freedb_id": "Seated_Leg_Curl",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "hanging-knee-raise": {
+    "edb_name": "assisted hanging knee raise",
+    "files": [
+      "hanging-knee-raise.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "hip-thrust": {
+    "files": [
+      "hip-thrust-0.jpg",
+      "hip-thrust-1.jpg"
+    ],
+    "freedb_id": "Barbell_Hip_Thrust",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "hollow-hold": {
+    "files": [
+      "hollow-hold-0.jpg",
+      "hollow-hold-1.jpg"
+    ],
+    "freedb_id": "Body-Up",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "incline-pushup": {
+    "edb_name": "incline push-up",
+    "files": [
+      "incline-pushup.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "inverted-row": {
+    "files": [
+      "inverted-row-0.jpg",
+      "inverted-row-1.jpg"
+    ],
+    "freedb_id": "Inverted_Row",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "kb-swing": {
+    "files": [
+      "kb-swing-0.jpg",
+      "kb-swing-1.jpg"
+    ],
+    "freedb_id": "One-Arm_Kettlebell_Swings",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "knee-pushup": {
+    "files": [
+      "knee-pushup-0.jpg",
+      "knee-pushup-1.jpg"
+    ],
+    "freedb_id": "Push-Ups_-_Close_Triceps_Position",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "lat-pulldown": {
+    "files": [
+      "lat-pulldown-0.jpg",
+      "lat-pulldown-1.jpg"
+    ],
+    "freedb_id": "Wide-Grip_Lat_Pulldown",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "lateral-lunge": {
+    "files": [],
+    "kind": "none"
+  },
+  "leg-press": {
+    "edb_name": "sled 45\u00b0 leg press (side pov)",
+    "files": [
+      "leg-press.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "lying-ham-curl": {
+    "edb_name": "lever lying leg curl",
+    "files": [
+      "lying-ham-curl.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "lying-leg-raise": {
+    "files": [
+      "lying-leg-raise-0.jpg",
+      "lying-leg-raise-1.jpg"
+    ],
+    "freedb_id": "Flat_Bench_Lying_Leg_Raise",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "machine-press": {
+    "files": [
+      "machine-press-0.jpg",
+      "machine-press-1.jpg"
+    ],
+    "freedb_id": "Smith_Machine_Bench_Press",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "machine-shoulder-press": {
+    "edb_name": "lever shoulder press",
+    "files": [
+      "machine-shoulder-press.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "nordic-curl": {
+    "files": [
+      "nordic-curl-0.jpg",
+      "nordic-curl-1.jpg"
+    ],
+    "freedb_id": "Natural_Glute_Ham_Raise",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "ohp": {
+    "files": [
+      "ohp-0.jpg",
+      "ohp-1.jpg"
+    ],
+    "freedb_id": "Standing_Military_Press",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "overhead-tri-extension": {
+    "edb_name": "cable overhead triceps extension (rope attachment)",
+    "files": [
+      "overhead-tri-extension.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "pallof-press": {
+    "edb_name": "band horizontal pallof press",
+    "files": [
+      "pallof-press.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "plank": {
+    "edb_name": "bodyweight incline side plank",
+    "files": [
+      "plank.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "plank-to-pushup": {
+    "files": [
+      "plank-to-pushup-0.jpg",
+      "plank-to-pushup-1.jpg"
+    ],
+    "freedb_id": "Push_Up_to_Side_Plank",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "pushup": {
+    "edb_name": "push-up inside leg kick",
+    "files": [
+      "pushup.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "rdl": {
+    "files": [
+      "rdl-0.jpg",
+      "rdl-1.jpg"
+    ],
+    "freedb_id": "Romanian_Deadlift",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "reverse-lunge": {
+    "files": [
+      "reverse-lunge-0.jpg",
+      "reverse-lunge-1.jpg"
+    ],
+    "freedb_id": "Dumbbell_Rear_Lunge",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "russian-twist": {
+    "files": [
+      "russian-twist-0.jpg",
+      "russian-twist-1.jpg"
+    ],
+    "freedb_id": "Russian_Twist",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "seated-calf-raise": {
+    "files": [
+      "seated-calf-raise-0.jpg",
+      "seated-calf-raise-1.jpg"
+    ],
+    "freedb_id": "Seated_Calf_Raise",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "side-plank": {
+    "edb_name": "bodyweight incline side plank",
+    "files": [
+      "side-plank.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "single-leg-hip-thrust": {
+    "files": [
+      "single-leg-hip-thrust-0.jpg",
+      "single-leg-hip-thrust-1.jpg"
+    ],
+    "freedb_id": "Single_Leg_Glute_Bridge",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "step-up": {
+    "edb_name": "dumbbell step-up",
+    "files": [
+      "step-up.gif"
+    ],
+    "kind": "gif",
+    "source": "exercisedb"
+  },
+  "treadmill-sprint": {
+    "files": [
+      "treadmill-sprint-0.jpg",
+      "treadmill-sprint-1.jpg"
+    ],
+    "freedb_id": "Running_Treadmill",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "treadmill-walk": {
+    "files": [
+      "treadmill-walk-0.jpg",
+      "treadmill-walk-1.jpg"
+    ],
+    "freedb_id": "Walking_Treadmill",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "tricep-pushdown": {
+    "files": [
+      "tricep-pushdown-0.jpg",
+      "tricep-pushdown-1.jpg"
+    ],
+    "freedb_id": "Triceps_Pushdown",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  },
+  "walking-lunge": {
+    "files": [
+      "walking-lunge-0.jpg",
+      "walking-lunge-1.jpg"
+    ],
+    "freedb_id": "Bodyweight_Walking_Lunge",
+    "kind": "frames",
+    "source": "free-exercise-db"
+  }
+}

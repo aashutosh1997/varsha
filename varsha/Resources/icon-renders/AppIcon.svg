@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Varsha — App Icon
+  Concept: Monsoon Drop. वर्षा means rain.
+
+  A single droplet against a fresh-sky gradient with a confident V tucked
+  into its lower body. No rounded corners — iOS applies the mask at install.
+
+  Master canvas: 1024 × 1024.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Sky gradient: post-monsoon teal, light at top, deep at bottom -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#6FB8CE"/>
+      <stop offset="55%"  stop-color="#3D89A4"/>
+      <stop offset="100%" stop-color="#1B435B"/>
+    </linearGradient>
+
+    <!-- Droplet body: subtle vertical gradient, white at apex, cooler at base -->
+    <linearGradient id="droplet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="60%"  stop-color="#F2F8FA"/>
+      <stop offset="100%" stop-color="#D6E5EB"/>
+    </linearGradient>
+
+    <!-- Soft inner glow for the droplet, gives it a touch of depth -->
+    <radialGradient id="glow" cx="0.42" cy="0.72" r="0.55">
+      <stop offset="0%"  stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#sky)"/>
+
+  <!-- Big stylized water droplet.
+       Apex at (512, 196). Round bell ends ~(512, 800).
+       Drawn as a closed path with curves for organic feel. -->
+  <path d="M 512 196
+           C 700 460, 770 612, 770 730
+           A 258 258 0 1 1 254 730
+           C 254 612, 324 460, 512 196 Z"
+        fill="url(#droplet)"/>
+
+  <!-- Inner glow / highlight on the droplet body -->
+  <path d="M 512 196
+           C 700 460, 770 612, 770 730
+           A 258 258 0 1 1 254 730
+           C 254 612, 324 460, 512 196 Z"
+        fill="url(#glow)"/>
+
+  <!-- Soft specular highlight on left side, like a real water droplet -->
+  <path d="M 388 540
+           C 360 600, 348 670, 360 740
+           C 372 760, 390 770, 408 760
+           C 420 700, 420 620, 410 555
+           C 405 540, 396 535, 388 540 Z"
+        fill="#FFFFFF" opacity="0.55"/>
+
+  <!-- The V — confident, not timid. Two thick rounded strokes meeting at a point.
+       Sits in the lower-mid of the droplet so it reads at small sizes. -->
+  <g stroke="#1F5C7A" stroke-width="68" stroke-linecap="round" fill="none">
+    <line x1="408" y1="612" x2="512" y2="820"/>
+    <line x1="616" y1="612" x2="512" y2="820"/>
+  </g>
+</svg>

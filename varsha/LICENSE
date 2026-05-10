@@ -1,0 +1,51 @@
+                    GNU AFFERO GENERAL PUBLIC LICENSE
+                       Version 3, 19 November 2007
+
+ Copyright (C) 2026 [Your Name]
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Affero General Public License as
+ published by the Free Software Foundation, either version 3 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Affero General Public License for more details.
+
+ You should have received a copy of the GNU Affero General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+================================================================================
+
+This file is a placeholder containing the AGPL-3.0 short header. Before
+publishing the repository, replace it with the full GNU Affero General
+Public License v3 text from:
+
+    https://www.gnu.org/licenses/agpl-3.0.txt
+
+The full license is ~32 KB. GitHub's "Add license" picker will insert the
+canonical text automatically — either use that, or run:
+
+    curl -sL https://www.gnu.org/licenses/agpl-3.0.txt > LICENSE
+
+Replace "[Your Name]" above with your name or organization.
+
+--------------------------------------------------------------------------------
+WHY AGPL-3.0?
+
+Varsha bundles animated GIFs from ExerciseDB
+(https://github.com/ExerciseDB/exercisedb-api), which is licensed under
+AGPL-3.0. The AGPL is "viral" — any work that incorporates AGPL data or
+code must itself be distributed under AGPL-3.0 (or compatible). That makes
+this whole project AGPL.
+
+Other bundled data:
+  • yuhonas/free-exercise-db — public domain (Unlicense), AGPL-compatible.
+  • Exercise prescriptions and form cues in WorkoutData.swift — original
+    work, contributed under AGPL-3.0 along with the rest of the project.
+
+If you don't want AGPL, run the fetcher with --frames-only to skip
+ExerciseDB entirely; the two-frame animator from free-exercise-db is
+public domain and imposes no restrictions, so you'd be free to relicense
+the project under MIT, Apache-2.0, or anything else.
