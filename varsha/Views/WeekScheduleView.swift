@@ -9,11 +9,9 @@
 import SwiftUI
 
 struct WeekScheduleView: View {
-    let plan: WorkoutPlan
+    @AppStorage("selectedPlanId") private var selectedPlanId = WorkoutPlan.varsha.id
 
-    init(plan: WorkoutPlan = .varsha) {
-        self.plan = plan
-    }
+    private var plan: WorkoutPlan { .plan(withId: selectedPlanId) }
 
     var body: some View {
         NavigationStack {
@@ -21,7 +19,7 @@ struct WeekScheduleView: View {
                 Section {
                     VStack(alignment: .leading, spacing: 6) {
                         Text("This Week").font(.title2.bold())
-                        Text("5 active days, 2 rest")
+                        Text("\(plan.workouts.count) active days, \(7 - plan.workouts.count) rest")
                             .font(.subheadline).foregroundStyle(.secondary)
                     }
                     .padding(.vertical, 6)
@@ -47,6 +45,19 @@ struct WeekScheduleView: View {
                 }
             }
             .navigationTitle(plan.name)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Menu {
+                        Picker("Plan", selection: $selectedPlanId) {
+                            ForEach(WorkoutPlan.allPlans) { plan in
+                                Text(plan.name).tag(plan.id)
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "person.crop.circle")
+                    }
+                }
+            }
         }
     }
 }

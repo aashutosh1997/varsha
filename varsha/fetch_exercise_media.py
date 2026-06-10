@@ -70,6 +70,7 @@ EDB_NAME_CANDIDATES: dict[str, list[str]] = {
     "walking-lunge":         ["dumbbell walking lunge", "barbell walking lunge", "walking lunge"],
     "step-up":               ["dumbbell step-up", "dumbbell step up", "barbell step up", "step-up"],
     "ham-curl":              ["lever seated leg curl", "seated leg curl"],
+    "leg-extension":         ["lever leg extension", "leg extension"],
     "lying-ham-curl":        ["lever lying leg curl", "lying leg curl"],
     "nordic-curl":           ["nordic hamstring", "natural glute ham raise", "glute ham raise"],
     "hip-thrust":            ["barbell hip thrust", "hip thrust"],
@@ -87,6 +88,8 @@ EDB_NAME_CANDIDATES: dict[str, list[str]] = {
 
     # Upper body — push
     "bench-press":           ["barbell bench press", "barbell flat bench press"],
+    "incline-db-press":      ["dumbbell incline bench press", "incline dumbbell press"],
+    "lateral-raise":         ["dumbbell lateral raise", "side lateral raise"],
     "db-bench":              ["dumbbell bench press"],
     "machine-press":         ["smith machine bench press", "lever bench press", "machine bench press"],
     "ohp":                   ["barbell standing military press", "barbell overhead press", "standing military press"],
@@ -99,6 +102,8 @@ EDB_NAME_CANDIDATES: dict[str, list[str]] = {
     "cable-row":             ["cable seated row", "seated cable row"],
     "lat-pulldown":          ["cable wide grip lat pulldown", "lat pulldown", "cable lat pulldown"],
     "assisted-pullup":       ["assisted pull-up", "assisted pullup", "lever assisted pull-up", "pull-up"],
+    "pullup":                ["pull-up", "pull up (neutral grip)", "pull up"],
+    "face-pull":             ["face pull", "cable rear delt row", "cable face pull"],
 
     # Arms
     "db-curl":               ["dumbbell biceps curl", "dumbbell bicep curl", "dumbbell curl"],
@@ -162,6 +167,11 @@ FREEDB_FALLBACK_MAP: dict[str, Optional[str]] = {
     "kb-swing":              "One-Arm_Kettlebell_Swings",
     "bench-press":           "Barbell_Bench_Press_-_Medium_Grip",
     "db-bench":              "Dumbbell_Bench_Press",
+    "incline-db-press":      "Incline_Dumbbell_Press",
+    "lateral-raise":         "Side_Lateral_Raise",
+    "face-pull":             "Face_Pull",
+    "pullup":                "Pullups",
+    "leg-extension":         "Leg_Extensions",
     "machine-press":         "Smith_Machine_Bench_Press",
     "ohp":                   "Standing_Military_Press",
     "db-shoulder-press":     "Dumbbell_Shoulder_Press",
