@@ -31,10 +31,10 @@ struct WeekScheduleView: View {
                             NavigationLink {
                                 WorkoutDetailView(workout: workout, library: plan.library)
                             } label: {
-                                WorkoutRow(day: day, workout: workout)
+                                DayRow(day: day, workout: workout)
                             }
                         } else {
-                            RestDayRow(day: day)
+                            DayRow(day: day, workout: nil)
                         }
                     }
                 }
@@ -62,47 +62,32 @@ struct WeekScheduleView: View {
     }
 }
 
-// MARK: - Row helpers (private to this file)
+// MARK: - Row helper (private to this file)
 
-private struct WorkoutRow: View {
+/// One row per weekday; `workout == nil` renders the rest-day style.
+private struct DayRow: View {
     let day: Weekday
-    let workout: Workout
+    let workout: Workout?
 
     var body: some View {
         HStack(spacing: 14) {
             VStack(spacing: 2) {
                 Text(day.displayName.prefix(3).uppercased())
                     .font(.caption.bold())
-                    .foregroundStyle(.orange)
-                Image(systemName: "dumbbell.fill")
-                    .foregroundStyle(.orange)
+                    .foregroundStyle(workout == nil ? AnyShapeStyle(.secondary) : AnyShapeStyle(.orange))
+                Image(systemName: workout == nil ? "leaf.fill" : "dumbbell.fill")
+                    .foregroundStyle(workout == nil ? .green : .orange)
             }
             .frame(width: 44)
-            VStack(alignment: .leading, spacing: 2) {
-                Text(workout.title).font(.headline)
-                Text("\(workout.totalSets) sets · \(workout.estimatedMinutes) min")
-                    .font(.caption).foregroundStyle(.secondary)
+            if let workout {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(workout.title).font(.headline)
+                    Text("\(workout.totalSets) sets · \(workout.estimatedMinutes) min")
+                        .font(.caption).foregroundStyle(.secondary)
+                }
+            } else {
+                Text("Rest / Active recovery").foregroundStyle(.secondary)
             }
-            Spacer()
-        }
-        .padding(.vertical, 4)
-    }
-}
-
-private struct RestDayRow: View {
-    let day: Weekday
-
-    var body: some View {
-        HStack(spacing: 14) {
-            VStack(spacing: 2) {
-                Text(day.displayName.prefix(3).uppercased())
-                    .font(.caption.bold())
-                    .foregroundStyle(.secondary)
-                Image(systemName: "leaf.fill")
-                    .foregroundStyle(.green)
-            }
-            .frame(width: 44)
-            Text("Rest / Active recovery").foregroundStyle(.secondary)
             Spacer()
         }
         .padding(.vertical, 4)

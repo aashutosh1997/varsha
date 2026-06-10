@@ -1,0 +1,215 @@
+{
+  "id": "varsha",
+  "name": "Varsha",
+  "workouts": [
+    {
+      "day": "sunday",
+      "title": "Lower Body Strength",
+      "subtitle": "Self-led",
+      "estimatedMinutes": 60,
+      "warmupNote": "5 min easy bike + dynamic mobility (leg swings, hip openers, world's greatest stretch).",
+      "cooldownNote": "5 min walk + stretch quads, hams, hip flexors, calves.",
+      "blocks": [
+        {
+          "label": "A — Squat / RDL Superset",
+          "kind": "superset",
+          "tag": "A1/A2",
+          "notes": "Compound focus. Build to a working weight at RPE 7-8.",
+          "superset": { "exercises": ["back-squat", "rdl"], "rounds": 4, "reps": 8, "rest": 90 }
+        },
+        {
+          "label": "B — Bulgarian / Ham Curl Superset",
+          "kind": "superset",
+          "tag": "B1/B2",
+          "notes": "10/leg for the split squat.",
+          "superset": { "exercises": ["bulgarian-split-squat", "ham-curl"], "rounds": 3, "reps": 10, "rest": 75 }
+        },
+        {
+          "label": "C — Hip Thrust",
+          "kind": "straight",
+          "tag": "C",
+          "straight": { "exercise": "hip-thrust", "sets": 3, "reps": 10, "rest": 75 }
+        },
+        {
+          "label": "D — Calf Raise",
+          "kind": "straight",
+          "tag": "D",
+          "straight": { "exercise": "calf-raise", "sets": 3, "reps": 15, "rest": 45 }
+        },
+        {
+          "label": "Core Finisher",
+          "kind": "finisher",
+          "tag": "Core",
+          "rounds": {
+            "count": 3,
+            "labelStyle": "set",
+            "items": [
+              { "exercise": "dead-bug", "reps": 10, "rest": 30 },
+              { "exercise": "side-plank", "durationSeconds": 30, "perSide": true, "rest": 30, "restFinalRound": 0 }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "day": "monday",
+      "title": "Glutes & Core",
+      "subtitle": "Self-led",
+      "estimatedMinutes": 55,
+      "warmupNote": "Glute activation: banded clamshells 2×15/side, banded glute bridge 2×15, lateral walks 2×10/side.",
+      "cooldownNote": "Stretch hip flexors, glutes, hamstrings.",
+      "blocks": [
+        {
+          "label": "A — Hip Thrust",
+          "kind": "straight",
+          "tag": "A",
+          "straight": { "exercise": "hip-thrust", "sets": 4, "reps": 10, "rest": 90 }
+        },
+        {
+          "label": "B — Cable Pull-through",
+          "kind": "straight",
+          "tag": "B",
+          "straight": { "exercise": "cable-pull-through", "sets": 3, "reps": 12, "rest": 60 }
+        },
+        {
+          "label": "C — Walking Lunge / Glute Kickback",
+          "kind": "superset",
+          "tag": "C1/C2",
+          "notes": "10/leg both.",
+          "superset": { "exercises": ["walking-lunge", "glute-kickback"], "rounds": 3, "reps": 10, "rest": 75 }
+        },
+        {
+          "label": "D — Curtsy Lunge",
+          "kind": "straight",
+          "tag": "D",
+          "straight": { "exercise": "curtsy-lunge", "sets": 3, "reps": 10, "perSide": true, "rest": 60 }
+        },
+        {
+          "label": "Core Circuit (3 rounds)",
+          "kind": "circuit",
+          "tag": "Core Circuit",
+          "rounds": {
+            "count": 3,
+            "items": [
+              { "exercise": "dead-bug", "reps": 12, "rest": 0 },
+              { "exercise": "pallof-press", "reps": 10, "perSide": true, "rest": 0 },
+              { "exercise": "hanging-knee-raise", "reps": 10, "rest": 0 },
+              { "exercise": "side-plank", "durationSeconds": 30, "perSide": true, "rest": 60, "restFinalRound": 0 }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "day": "tuesday",
+      "title": "Upper Body / Lifting Technique",
+      "subtitle": "Self-led",
+      "estimatedMinutes": 60,
+      "warmupNote": "5 min row machine + arm circles, scap pulls, band pull-aparts.",
+      "cooldownNote": "Stretch chest, lats, shoulders.",
+      "blocks": [
+        {
+          "label": "A — Bench / Row Superset",
+          "kind": "superset",
+          "tag": "A1/A2",
+          "notes": "Heavy compound work. Form > weight.",
+          "superset": { "exercises": ["bench-press", "barbell-row"], "rounds": 4, "reps": 8, "rest": 90 }
+        },
+        {
+          "label": "B — OHP / Lat Pulldown Superset",
+          "kind": "superset",
+          "tag": "B1/B2",
+          "superset": { "exercises": ["ohp", "lat-pulldown"], "rounds": 3, "reps": 10, "rest": 75 }
+        },
+        {
+          "label": "C — Curl / Pushdown Superset",
+          "kind": "superset",
+          "tag": "C1/C2",
+          "superset": { "exercises": ["db-curl", "tricep-pushdown"], "rounds": 3, "reps": 12, "rest": 60 }
+        },
+        {
+          "label": "Core",
+          "kind": "finisher",
+          "tag": "Core",
+          "straight": { "exercise": "hanging-knee-raise", "sets": 3, "reps": 10, "rest": 45 }
+        }
+      ]
+    },
+    {
+      "day": "wednesday",
+      "title": "Full Body Conditioning",
+      "subtitle": "Calisthenics-style",
+      "estimatedMinutes": 50,
+      "warmupNote": "5 min easy cardio + dynamic mobility.",
+      "cooldownNote": "Full-body stretch, foam roll quads + IT band.",
+      "blocks": [
+        {
+          "label": "Circuit A (4 rounds, 40s work / 20s rest)",
+          "kind": "circuit",
+          "tag": "Circuit A",
+          "rounds": {
+            "count": 4,
+            "items": [
+              { "exercise": "goblet-squat", "durationSeconds": 40, "rest": 20 },
+              { "exercise": "pushup", "durationSeconds": 40, "rest": 20 },
+              { "exercise": "inverted-row", "durationSeconds": 40, "rest": 20 },
+              { "exercise": "reverse-lunge", "durationSeconds": 40, "rest": 20 },
+              { "exercise": "plank-to-pushup", "durationSeconds": 40, "rest": 60, "restFinalRound": 90 }
+            ]
+          }
+        },
+        {
+          "label": "Strength finishers",
+          "kind": "straight",
+          "tag": "Strength",
+          "groups": [
+            { "exercise": "assisted-pullup", "sets": 3, "reps": 6, "rest": 60, "lastRest": 90 },
+            { "exercise": "bench-dip", "sets": 3, "reps": 10, "rest": 60, "lastRest": 90 }
+          ]
+        },
+        {
+          "label": "Core",
+          "kind": "finisher",
+          "tag": "Core",
+          "groups": [
+            { "exercise": "hollow-hold", "sets": 3, "durationSeconds": 20, "rest": 40, "lastRest": 60 },
+            { "exercise": "russian-twist", "sets": 3, "reps": 20, "rest": 30, "lastRest": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "thursday",
+      "title": "HIIT + Conditioning",
+      "subtitle": "Treadmill intervals + finishers",
+      "estimatedMinutes": 40,
+      "warmupNote": "5 min easy walk warm-up before sprints.",
+      "cooldownNote": "5 min walk + full-body stretch. Hydrate.",
+      "blocks": [
+        {
+          "label": "Treadmill intervals (8 rounds)",
+          "kind": "interval",
+          "tag": "HIIT",
+          "notes": "Sprint at RPE 8-9 (hard but controlled). Walk fully easy.",
+          "rounds": {
+            "count": 8,
+            "items": [
+              { "exercise": "treadmill-sprint", "durationSeconds": 30, "rest": 0 },
+              { "exercise": "treadmill-walk", "durationSeconds": 90, "rest": 0 }
+            ]
+          }
+        },
+        {
+          "label": "Finishers",
+          "kind": "finisher",
+          "tag": "Finisher",
+          "groups": [
+            { "exercise": "farmer-carry", "sets": 3, "durationSeconds": 45, "rest": 60, "notes": "30m carry" },
+            { "exercise": "plank", "sets": 3, "durationSeconds": 45, "rest": 30 },
+            { "exercise": "hollow-hold", "sets": 1, "reps": 20, "rest": 0, "labelOverride": "Hollow rocks" }
+          ]
+        }
+      ]
+    }
+  ]
+}

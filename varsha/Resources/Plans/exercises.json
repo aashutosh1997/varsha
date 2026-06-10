@@ -1,0 +1,477 @@
+{
+  "exercises": [
+    {
+      "id": "back-squat",
+      "name": "Barbell Back Squat",
+      "primaryMuscle": "Quads / Glutes",
+      "formCues": [
+        "Brace core before each rep",
+        "Knees track over toes",
+        "Hip crease below knee at depth",
+        "Drive through mid-foot"
+      ],
+      "alternativeIds": ["goblet-squat", "leg-press", "hack-squat"]
+    },
+    {
+      "id": "goblet-squat",
+      "name": "Goblet Squat",
+      "primaryMuscle": "Quads / Glutes",
+      "formCues": ["Hold dumbbell at chest", "Elbows inside knees at bottom", "Chest tall"],
+      "alternativeIds": ["back-squat", "leg-press"]
+    },
+    {
+      "id": "leg-press",
+      "name": "Leg Press",
+      "primaryMuscle": "Quads / Glutes",
+      "formCues": ["Feet shoulder-width on platform", "Lower until thighs ~90°", "Don't lock knees at top"],
+      "alternativeIds": ["back-squat", "goblet-squat"]
+    },
+    {
+      "id": "hack-squat",
+      "name": "Hack Squat",
+      "primaryMuscle": "Quads",
+      "formCues": ["Back flat against pad", "Feet shoulder-width", "Controlled descent"],
+      "alternativeIds": ["back-squat", "leg-press"]
+    },
+    {
+      "id": "rdl",
+      "name": "Romanian Deadlift",
+      "primaryMuscle": "Hamstrings / Glutes",
+      "formCues": [
+        "Hinge at hips, slight knee bend",
+        "Bar stays close to legs",
+        "Stop when you feel hamstring stretch",
+        "Drive hips forward to stand"
+      ],
+      "alternativeIds": ["db-rdl", "cable-pull-through"]
+    },
+    {
+      "id": "db-rdl",
+      "name": "Dumbbell RDL",
+      "primaryMuscle": "Hamstrings / Glutes",
+      "formCues": ["DBs in front of thighs", "Hinge, don't squat", "Soft knees"],
+      "alternativeIds": ["rdl", "cable-pull-through"]
+    },
+    {
+      "id": "cable-pull-through",
+      "name": "Cable Pull-through",
+      "primaryMuscle": "Glutes / Hamstrings",
+      "formCues": ["Hinge at hips", "Squeeze glutes at top", "Don't overextend lower back"],
+      "alternativeIds": ["rdl", "kb-swing"]
+    },
+    {
+      "id": "bulgarian-split-squat",
+      "name": "Bulgarian Split Squat",
+      "primaryMuscle": "Quads / Glutes",
+      "formCues": [
+        "Front foot far enough that front shin stays vertical",
+        "Lower straight down, not forward",
+        "Front heel stays planted"
+      ],
+      "alternativeIds": ["reverse-lunge", "step-up"]
+    },
+    {
+      "id": "reverse-lunge",
+      "name": "Reverse Lunge",
+      "primaryMuscle": "Quads / Glutes",
+      "formCues": ["Step back, drop straight down", "Front knee 90°", "Drive through front heel"],
+      "alternativeIds": ["bulgarian-split-squat", "walking-lunge"]
+    },
+    {
+      "id": "walking-lunge",
+      "name": "Walking Lunge",
+      "primaryMuscle": "Quads / Glutes",
+      "formCues": ["Long stride", "Knee tracks over toe, doesn't pass it", "Torso upright"],
+      "alternativeIds": ["reverse-lunge", "step-up"]
+    },
+    {
+      "id": "step-up",
+      "name": "Step-up",
+      "primaryMuscle": "Quads / Glutes",
+      "formCues": ["Whole foot on box", "Drive through heel", "Don't push off back foot"],
+      "alternativeIds": ["reverse-lunge"]
+    },
+    {
+      "id": "ham-curl",
+      "name": "Seated Hamstring Curl",
+      "primaryMuscle": "Hamstrings",
+      "formCues": ["Pad just above ankles", "Full ROM", "Squeeze at bottom"],
+      "alternativeIds": ["lying-ham-curl", "nordic-curl"]
+    },
+    {
+      "id": "lying-ham-curl",
+      "name": "Lying Hamstring Curl",
+      "primaryMuscle": "Hamstrings",
+      "formCues": ["Hips stay on pad", "Controlled tempo"],
+      "alternativeIds": ["ham-curl", "nordic-curl"]
+    },
+    {
+      "id": "nordic-curl",
+      "name": "Nordic Curl",
+      "primaryMuscle": "Hamstrings",
+      "formCues": ["Anchor feet", "Lower under control", "Use hands to push back up"],
+      "alternativeIds": ["ham-curl"]
+    },
+    {
+      "id": "hip-thrust",
+      "name": "Barbell Hip Thrust",
+      "primaryMuscle": "Glutes",
+      "formCues": [
+        "Shoulder blades on bench",
+        "Chin tucked, ribs down",
+        "Drive through heels, not toes",
+        "Squeeze glutes hard at top"
+      ],
+      "alternativeIds": ["glute-bridge", "single-leg-hip-thrust"]
+    },
+    {
+      "id": "glute-bridge",
+      "name": "Glute Bridge",
+      "primaryMuscle": "Glutes",
+      "formCues": ["Feet flat", "Drive hips up, squeeze glutes", "Don't arch lower back"],
+      "alternativeIds": ["hip-thrust"]
+    },
+    {
+      "id": "single-leg-hip-thrust",
+      "name": "Single-Leg Hip Thrust",
+      "primaryMuscle": "Glutes",
+      "formCues": ["One foot up", "Drive through planted heel", "Stay level"],
+      "alternativeIds": ["hip-thrust"]
+    },
+    {
+      "id": "calf-raise",
+      "name": "Standing Calf Raise",
+      "primaryMuscle": "Calves",
+      "formCues": ["Full stretch at bottom", "Pause at top", "Slow eccentric"],
+      "alternativeIds": ["seated-calf-raise"]
+    },
+    {
+      "id": "seated-calf-raise",
+      "name": "Seated Calf Raise",
+      "primaryMuscle": "Calves",
+      "formCues": ["Knees bent 90°", "Full ROM"],
+      "alternativeIds": ["calf-raise"]
+    },
+    {
+      "id": "dead-bug",
+      "name": "Dead Bug",
+      "primaryMuscle": "Core",
+      "formCues": ["Lower back glued to floor", "Opposite arm/leg extend", "Slow + controlled"],
+      "alternativeIds": ["bird-dog"]
+    },
+    {
+      "id": "side-plank",
+      "name": "Side Plank",
+      "primaryMuscle": "Obliques / Core",
+      "formCues": ["Stack hips and shoulders", "Push the floor away", "Don't sag"],
+      "alternativeIds": ["plank"]
+    },
+    {
+      "id": "plank",
+      "name": "Plank",
+      "primaryMuscle": "Core",
+      "formCues": ["Squeeze glutes", "Ribs down", "Neutral neck"],
+      "alternativeIds": ["side-plank"]
+    },
+    {
+      "id": "pallof-press",
+      "name": "Pallof Press",
+      "primaryMuscle": "Core / Anti-rotation",
+      "formCues": ["Cable at chest height", "Press straight out", "Resist rotation"],
+      "alternativeIds": ["banded-rotation"]
+    },
+    {
+      "id": "hanging-knee-raise",
+      "name": "Hanging Knee Raise",
+      "primaryMuscle": "Core",
+      "formCues": ["No swinging", "Curl pelvis up, don't just lift legs", "Slow descent"],
+      "alternativeIds": ["lying-leg-raise"]
+    },
+    {
+      "id": "lying-leg-raise",
+      "name": "Lying Leg Raise",
+      "primaryMuscle": "Core",
+      "formCues": ["Lower back pressed down", "Don't let feet touch the floor"],
+      "alternativeIds": ["hanging-knee-raise"]
+    },
+    {
+      "id": "curtsy-lunge",
+      "name": "Curtsy Lunge",
+      "primaryMuscle": "Glutes / Adductors",
+      "formCues": ["Step behind and across", "Drop straight down", "Front foot stays planted"],
+      "alternativeIds": ["lateral-lunge"]
+    },
+    {
+      "id": "lateral-lunge",
+      "name": "Lateral Lunge",
+      "primaryMuscle": "Glutes / Adductors",
+      "formCues": ["Sit into the working leg", "Keep other leg straight", "Chest up"],
+      "alternativeIds": ["curtsy-lunge"]
+    },
+    {
+      "id": "glute-kickback",
+      "name": "Cable Glute Kickback",
+      "primaryMuscle": "Glutes",
+      "formCues": ["Cable on ankle", "Drive heel back, squeeze glute", "Don't arch low back"],
+      "alternativeIds": ["banded-kickback"]
+    },
+    {
+      "id": "banded-kickback",
+      "name": "Banded Donkey Kick",
+      "primaryMuscle": "Glutes",
+      "formCues": ["On all fours", "Drive heel toward ceiling", "Slow + controlled"],
+      "alternativeIds": ["glute-kickback"]
+    },
+    {
+      "id": "kb-swing",
+      "name": "Kettlebell Swing",
+      "primaryMuscle": "Posterior Chain",
+      "formCues": ["Hinge, don't squat", "Power from hips", "Bell to chest height (Russian)"],
+      "alternativeIds": ["cable-pull-through"]
+    },
+    {
+      "id": "bench-press",
+      "name": "Barbell Bench Press",
+      "primaryMuscle": "Chest / Triceps",
+      "formCues": ["Shoulder blades retracted, down", "Bar to lower chest", "Drive feet into floor"],
+      "alternativeIds": ["db-bench", "machine-press"]
+    },
+    {
+      "id": "db-bench",
+      "name": "Dumbbell Bench Press",
+      "primaryMuscle": "Chest / Triceps",
+      "formCues": ["Slight arch", "DBs press in slight arc", "Don't clang"],
+      "alternativeIds": ["bench-press", "machine-press"]
+    },
+    {
+      "id": "machine-press",
+      "name": "Machine Chest Press",
+      "primaryMuscle": "Chest",
+      "formCues": ["Adjust seat so handles align with chest", "Don't shrug"],
+      "alternativeIds": ["bench-press", "db-bench"]
+    },
+    {
+      "id": "barbell-row",
+      "name": "Bent-over Barbell Row",
+      "primaryMuscle": "Back",
+      "formCues": ["Hinge ~45°", "Pull to lower ribs", "Squeeze shoulder blades"],
+      "alternativeIds": ["chest-supported-row", "cable-row"]
+    },
+    {
+      "id": "chest-supported-row",
+      "name": "Chest-supported DB Row",
+      "primaryMuscle": "Back",
+      "formCues": ["Chest stays on pad", "Lead with elbows", "Squeeze at top"],
+      "alternativeIds": ["barbell-row", "cable-row"]
+    },
+    {
+      "id": "cable-row",
+      "name": "Seated Cable Row",
+      "primaryMuscle": "Back",
+      "formCues": ["Tall chest", "Pull to lower abs", "Don't lean back excessively"],
+      "alternativeIds": ["barbell-row", "chest-supported-row"]
+    },
+    {
+      "id": "ohp",
+      "name": "Overhead Press",
+      "primaryMuscle": "Shoulders / Triceps",
+      "formCues": ["Brace core, glutes tight", "Bar over mid-foot at lockout", "Don't flare ribs"],
+      "alternativeIds": ["db-shoulder-press", "machine-shoulder-press"]
+    },
+    {
+      "id": "db-shoulder-press",
+      "name": "DB Shoulder Press",
+      "primaryMuscle": "Shoulders",
+      "formCues": ["Seated with back support", "DBs press up and slightly in"],
+      "alternativeIds": ["ohp", "machine-shoulder-press"]
+    },
+    {
+      "id": "machine-shoulder-press",
+      "name": "Machine Shoulder Press",
+      "primaryMuscle": "Shoulders",
+      "formCues": ["Adjust seat so handles at shoulder", "Smooth tempo"],
+      "alternativeIds": ["ohp", "db-shoulder-press"]
+    },
+    {
+      "id": "lat-pulldown",
+      "name": "Lat Pulldown",
+      "primaryMuscle": "Back / Lats",
+      "formCues": ["Slight lean back", "Pull to upper chest", "Lead with elbows down"],
+      "alternativeIds": ["assisted-pullup"]
+    },
+    {
+      "id": "assisted-pullup",
+      "name": "Assisted Pull-up",
+      "primaryMuscle": "Back / Lats",
+      "formCues": ["Full hang at bottom", "Chin over bar", "Don't kip"],
+      "alternativeIds": ["lat-pulldown"]
+    },
+    {
+      "id": "db-curl",
+      "name": "DB Bicep Curl",
+      "primaryMuscle": "Biceps",
+      "formCues": ["Elbows pinned to sides", "Don't swing", "Full range of motion"],
+      "alternativeIds": ["cable-curl"]
+    },
+    {
+      "id": "cable-curl",
+      "name": "Cable Curl",
+      "primaryMuscle": "Biceps",
+      "formCues": ["Constant tension", "Slow eccentric"],
+      "alternativeIds": ["db-curl"]
+    },
+    {
+      "id": "tricep-pushdown",
+      "name": "Tricep Rope Pushdown",
+      "primaryMuscle": "Triceps",
+      "formCues": ["Elbows pinned", "Pull rope apart at bottom", "Don't lean over"],
+      "alternativeIds": ["overhead-tri-extension"]
+    },
+    {
+      "id": "overhead-tri-extension",
+      "name": "Overhead Tricep Extension",
+      "primaryMuscle": "Triceps",
+      "formCues": ["Elbows close to head", "Stretch at bottom"],
+      "alternativeIds": ["tricep-pushdown"]
+    },
+    {
+      "id": "pushup",
+      "name": "Push-up",
+      "primaryMuscle": "Chest / Triceps",
+      "formCues": ["Body straight, glutes tight", "Elbows ~45° from body", "Full ROM"],
+      "alternativeIds": ["incline-pushup", "knee-pushup"]
+    },
+    {
+      "id": "incline-pushup",
+      "name": "Incline Push-up",
+      "primaryMuscle": "Chest",
+      "formCues": ["Hands on bench", "Body straight"],
+      "alternativeIds": ["pushup", "knee-pushup"]
+    },
+    {
+      "id": "knee-pushup",
+      "name": "Knee Push-up",
+      "primaryMuscle": "Chest",
+      "formCues": ["Knees + hands on floor", "Body straight from knees to head"],
+      "alternativeIds": ["incline-pushup", "pushup"]
+    },
+    {
+      "id": "inverted-row",
+      "name": "Inverted Row",
+      "primaryMuscle": "Back",
+      "formCues": ["Body straight", "Pull chest to bar", "Squeeze shoulder blades"],
+      "alternativeIds": ["chest-supported-row"]
+    },
+    {
+      "id": "plank-to-pushup",
+      "name": "Plank to Push-up",
+      "primaryMuscle": "Core / Chest",
+      "formCues": ["Minimize hip rotation", "Switch lead arm each round"],
+      "alternativeIds": ["plank"]
+    },
+    {
+      "id": "bench-dip",
+      "name": "Bench Dip",
+      "primaryMuscle": "Triceps",
+      "formCues": ["Hands on bench", "Lower until elbows ~90°", "Don't shrug"],
+      "alternativeIds": ["tricep-pushdown"]
+    },
+    {
+      "id": "hollow-hold",
+      "name": "Hollow Body Hold",
+      "primaryMuscle": "Core",
+      "formCues": ["Lower back glued to floor", "Arms by ears", "Legs locked"],
+      "alternativeIds": ["dead-bug"]
+    },
+    {
+      "id": "russian-twist",
+      "name": "Russian Twist",
+      "primaryMuscle": "Obliques",
+      "formCues": ["Feet up if possible", "Rotate from torso, not arms"],
+      "alternativeIds": ["pallof-press"]
+    },
+    {
+      "id": "treadmill-sprint",
+      "name": "Treadmill Sprint",
+      "primaryMuscle": "Cardio",
+      "formCues": ["RPE 8-9 — hard but sustainable for 30s", "Mid-foot strike", "Arms drive"],
+      "alternativeIds": ["bike-sprint"]
+    },
+    {
+      "id": "treadmill-walk",
+      "name": "Treadmill Walk Recovery",
+      "primaryMuscle": "Cardio",
+      "formCues": ["Easy pace", "Recover breathing"],
+      "alternativeIds": []
+    },
+    {
+      "id": "bike-sprint",
+      "name": "Bike Sprint",
+      "primaryMuscle": "Cardio",
+      "formCues": ["RPE 8-9", "Resistance high enough you can't spin out"],
+      "alternativeIds": ["treadmill-sprint"]
+    },
+    {
+      "id": "farmer-carry",
+      "name": "Farmer's Carry",
+      "primaryMuscle": "Grip / Core / Posterior",
+      "formCues": ["Stand tall, shoulders back", "Walk with purpose", "Don't lean to one side"],
+      "alternativeIds": []
+    },
+    {
+      "id": "incline-db-press",
+      "name": "Incline Dumbbell Press",
+      "primaryMuscle": "Upper Chest / Shoulders",
+      "formCues": [
+        "Bench at 30-45°",
+        "Lower dumbbells to upper chest",
+        "Press up and slightly together",
+        "Keep shoulder blades pinned"
+      ],
+      "alternativeIds": ["db-bench", "machine-press"]
+    },
+    {
+      "id": "lateral-raise",
+      "name": "Dumbbell Lateral Raise",
+      "primaryMuscle": "Side Delts",
+      "formCues": [
+        "Slight bend in elbows",
+        "Raise to shoulder height, no higher",
+        "Lead with elbows, not hands",
+        "No swinging — go lighter if you must cheat"
+      ],
+      "alternativeIds": ["machine-shoulder-press"]
+    },
+    {
+      "id": "face-pull",
+      "name": "Cable Face Pull",
+      "primaryMuscle": "Rear Delts / Upper Back",
+      "formCues": [
+        "Rope at upper-chest height",
+        "Pull towards your eyes",
+        "Elbows high and wide",
+        "Pause and squeeze shoulder blades"
+      ],
+      "alternativeIds": ["chest-supported-row"]
+    },
+    {
+      "id": "pullup",
+      "name": "Pull-up",
+      "primaryMuscle": "Back / Lats",
+      "formCues": [
+        "Full hang at the bottom",
+        "Drive elbows down to lift",
+        "Chin over bar without kipping",
+        "Control the descent"
+      ],
+      "alternativeIds": ["assisted-pullup", "lat-pulldown"]
+    },
+    {
+      "id": "leg-extension",
+      "name": "Leg Extension",
+      "primaryMuscle": "Quads",
+      "formCues": ["Pad on lower shin", "Extend fully and squeeze quads", "Lower with control, no slamming"],
+      "alternativeIds": ["hack-squat", "leg-press"]
+    }
+  ]
+}

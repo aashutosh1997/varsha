@@ -1,0 +1,222 @@
+{
+  "id": "aashutosh",
+  "name": "Aashutosh",
+  "workouts": [
+    {
+      "day": "sunday",
+      "title": "Upper A — Chest & Back",
+      "subtitle": "Hypertrophy",
+      "estimatedMinutes": 70,
+      "warmupNote": "5 min row machine + arm circles, band pull-aparts, scap push-ups, then 2 light feeder sets of bench.",
+      "cooldownNote": "Stretch chest, lats, shoulders. Eat a solid meal within a couple of hours — you're bulking.",
+      "blocks": [
+        {
+          "label": "A — Bench Press",
+          "kind": "straight",
+          "tag": "A",
+          "notes": "Main strength lift. RPE 7-8 — add 2.5kg when all sets hit 6 clean reps.",
+          "straight": { "exercise": "bench-press", "sets": 4, "reps": 6, "weightKg": 40, "rest": 120 }
+        },
+        {
+          "label": "B — Barbell Row",
+          "kind": "straight",
+          "tag": "B",
+          "notes": "Torso near parallel, no heaving.",
+          "straight": { "exercise": "barbell-row", "sets": 4, "reps": 8, "weightKg": 40, "rest": 90 }
+        },
+        {
+          "label": "C — Incline DB Press",
+          "kind": "straight",
+          "tag": "C",
+          "straight": { "exercise": "incline-db-press", "sets": 3, "reps": 10, "rest": 90 }
+        },
+        {
+          "label": "D — Lat Pulldown",
+          "kind": "straight",
+          "tag": "D",
+          "straight": { "exercise": "lat-pulldown", "sets": 3, "reps": 10, "rest": 75 }
+        },
+        {
+          "label": "E — Lateral Raise / Face Pull",
+          "kind": "superset",
+          "tag": "E1/E2",
+          "notes": "Light and strict — these build the 'look better' width.",
+          "superset": { "exercises": ["lateral-raise", "face-pull"], "rounds": 3, "reps": 15, "rest": 60 }
+        },
+        {
+          "label": "F — Curl / Pushdown",
+          "kind": "superset",
+          "tag": "F1/F2",
+          "superset": { "exercises": ["db-curl", "tricep-pushdown"], "rounds": 3, "reps": 12, "rest": 60 }
+        },
+        {
+          "label": "Core",
+          "kind": "finisher",
+          "tag": "Core",
+          "straight": { "exercise": "hanging-knee-raise", "sets": 3, "reps": 10, "rest": 45 }
+        }
+      ]
+    },
+    {
+      "day": "monday",
+      "title": "Lower A — Squat Focus",
+      "subtitle": "Hypertrophy",
+      "estimatedMinutes": 65,
+      "warmupNote": "5 min easy bike + leg swings, hip openers, bodyweight squats, then 2 light feeder sets of squats.",
+      "cooldownNote": "5 min walk + stretch quads, hamstrings, hip flexors, calves.",
+      "blocks": [
+        {
+          "label": "A — Back Squat",
+          "kind": "straight",
+          "tag": "A",
+          "notes": "Main strength lift. RPE 7-8 — add 2.5kg when all sets hit 6 clean reps.",
+          "straight": { "exercise": "back-squat", "sets": 4, "reps": 6, "weightKg": 50, "rest": 150 }
+        },
+        {
+          "label": "B — Romanian Deadlift",
+          "kind": "straight",
+          "tag": "B",
+          "notes": "Feel the hamstrings load, keep the bar close.",
+          "straight": { "exercise": "rdl", "sets": 3, "reps": 8, "weightKg": 50, "rest": 120 }
+        },
+        {
+          "label": "C — Leg Press",
+          "kind": "straight",
+          "tag": "C",
+          "straight": { "exercise": "leg-press", "sets": 3, "reps": 10, "rest": 90 }
+        },
+        {
+          "label": "D — Seated Ham Curl",
+          "kind": "straight",
+          "tag": "D",
+          "straight": { "exercise": "ham-curl", "sets": 3, "reps": 12, "rest": 60 }
+        },
+        {
+          "label": "E — Standing Calf Raise",
+          "kind": "straight",
+          "tag": "E",
+          "notes": "Pause at the bottom stretch.",
+          "straight": { "exercise": "calf-raise", "sets": 4, "reps": 12, "rest": 45 }
+        },
+        {
+          "label": "Finisher",
+          "kind": "finisher",
+          "tag": "Finisher",
+          "groups": [
+            { "exercise": "kb-swing", "sets": 3, "reps": 15, "rest": 60 },
+            { "exercise": "plank", "sets": 3, "durationSeconds": 45, "rest": 30, "lastRest": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "wednesday",
+      "title": "Upper B — Shoulders & Pull",
+      "subtitle": "Hypertrophy",
+      "estimatedMinutes": 70,
+      "warmupNote": "5 min row machine + band pull-aparts, wall slides, then 2 light feeder sets of overhead press.",
+      "cooldownNote": "Stretch lats, chest, forearms.",
+      "blocks": [
+        {
+          "label": "A — Overhead Press",
+          "kind": "straight",
+          "tag": "A",
+          "notes": "Squeeze glutes, don't lean back. Add 2.5kg when all sets hit 6.",
+          "straight": { "exercise": "ohp", "sets": 4, "reps": 6, "weightKg": 25, "rest": 120 }
+        },
+        {
+          "label": "B — Pull-up",
+          "kind": "straight",
+          "tag": "B",
+          "notes": "Use the assisted machine if you can't get 6 clean reps.",
+          "straight": { "exercise": "pullup", "sets": 4, "reps": 6, "rest": 120 }
+        },
+        {
+          "label": "C — Dumbbell Bench Press",
+          "kind": "straight",
+          "tag": "C",
+          "straight": { "exercise": "db-bench", "sets": 3, "reps": 10, "rest": 90 }
+        },
+        {
+          "label": "D — Seated Cable Row",
+          "kind": "straight",
+          "tag": "D",
+          "straight": { "exercise": "cable-row", "sets": 3, "reps": 10, "rest": 75 }
+        },
+        {
+          "label": "E — Lateral Raise / Face Pull",
+          "kind": "superset",
+          "tag": "E1/E2",
+          "notes": "Second weekly hit for delts and rear delts.",
+          "superset": { "exercises": ["lateral-raise", "face-pull"], "rounds": 3, "reps": 15, "rest": 60 }
+        },
+        {
+          "label": "F — Cable Curl / Overhead Extension",
+          "kind": "superset",
+          "tag": "F1/F2",
+          "superset": { "exercises": ["cable-curl", "overhead-tri-extension"], "rounds": 3, "reps": 12, "rest": 60 }
+        },
+        {
+          "label": "Core",
+          "kind": "finisher",
+          "tag": "Core",
+          "straight": { "exercise": "lying-leg-raise", "sets": 3, "reps": 12, "rest": 45 }
+        }
+      ]
+    },
+    {
+      "day": "thursday",
+      "title": "Lower B — Hinge & Conditioning",
+      "subtitle": "Hypertrophy + intervals",
+      "estimatedMinutes": 65,
+      "warmupNote": "5 min incline treadmill walk + hip hinges with a dowel, glute bridges 2×12, then 2 light feeder sets of RDL.",
+      "cooldownNote": "5 min easy spin + full-body stretch. Hit your calorie surplus today.",
+      "blocks": [
+        {
+          "label": "A — Romanian Deadlift (heavy)",
+          "kind": "straight",
+          "tag": "A",
+          "notes": "Heavier than Monday's RDL — RPE 7-8.",
+          "straight": { "exercise": "rdl", "sets": 4, "reps": 6, "weightKg": 55, "rest": 150 }
+        },
+        {
+          "label": "B — Hack Squat",
+          "kind": "straight",
+          "tag": "B",
+          "straight": { "exercise": "hack-squat", "sets": 3, "reps": 8, "rest": 120 }
+        },
+        {
+          "label": "C — Bulgarian Split Squat",
+          "kind": "straight",
+          "tag": "C",
+          "notes": "10/leg.",
+          "straight": { "exercise": "bulgarian-split-squat", "sets": 3, "reps": 10, "perSide": true, "rest": 90 }
+        },
+        {
+          "label": "D — Leg Extension / Lying Ham Curl",
+          "kind": "superset",
+          "tag": "D1/D2",
+          "superset": { "exercises": ["leg-extension", "lying-ham-curl"], "rounds": 3, "reps": 12, "rest": 60 }
+        },
+        {
+          "label": "E — Seated Calf Raise",
+          "kind": "straight",
+          "tag": "E",
+          "straight": { "exercise": "seated-calf-raise", "sets": 4, "reps": 15, "rest": 45 }
+        },
+        {
+          "label": "Bike intervals (6 rounds)",
+          "kind": "interval",
+          "tag": "Intervals",
+          "notes": "Sprint at RPE 8 — conditioning without eating into recovery.",
+          "rounds": {
+            "count": 6,
+            "items": [
+              { "exercise": "bike-sprint", "durationSeconds": 20, "rest": 70, "restFinalRound": 0, "notes": "Easy spin during the rest" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

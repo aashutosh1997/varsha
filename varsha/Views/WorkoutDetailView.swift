@@ -123,15 +123,8 @@ private struct BlockCard: View {
         }
         return seen.compactMap { id in
             guard let entry = counts[id], let exercise = library.exercise(for: id) else { return nil }
-            let count = entry.count
-            let set = entry.set
-            var detail = "\(count) × "
-            if let reps = set.reps {
-                detail += set.perSide ? "\(reps)/side" : "\(reps) reps"
-            } else if let dur = set.durationSeconds {
-                detail += "\(dur)s"
-            }
-            return ExerciseSummary(name: exercise.name, detail: detail)
+            let prescription = entry.set.repsSummaryText ?? entry.set.durationText ?? ""
+            return ExerciseSummary(name: exercise.name, detail: "\(entry.count) × \(prescription)")
         }
     }
 }

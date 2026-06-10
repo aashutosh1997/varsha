@@ -105,21 +105,12 @@ struct ExerciseLibrary: Codable {
 // MARK: - Workout plan
 
 /// A named, swappable collection of workouts + exercise catalog.
-/// To add a new user: create a new Swift file with `extension WorkoutPlan { static let name = ... }`
-/// or load from a bundled JSON via `WorkoutPlan.load(named:)`.
+/// To add a new user: add a `Resources/Plans/<id>.json` file (decoded by
+/// `PlanLoader`) and register it in `WorkoutPlan.allPlans` (WorkoutPlans.swift).
 struct WorkoutPlan: Identifiable, Codable {
     let id: String
     let name: String
     /// Keyed by weekday; missing days are treated as rest days.
     let workouts: [Weekday: Workout]
     let library: ExerciseLibrary
-
-    /// Loads a plan from a JSON file in the given bundle.
-    /// The JSON must be a `WorkoutPlan`-shaped object (encode an existing plan to produce one).
-    static func load(named fileName: String, in bundle: Bundle = .main) throws -> WorkoutPlan {
-        guard let url = bundle.url(forResource: fileName, withExtension: "json") else {
-            throw CocoaError(.fileNoSuchFile)
-        }
-        return try JSONDecoder().decode(WorkoutPlan.self, from: try Data(contentsOf: url))
-    }
 }
