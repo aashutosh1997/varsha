@@ -62,7 +62,7 @@ private func supersetSets(
 
 // MARK: - Exercise Library
 
-let exerciseLibrary = ExerciseLibrary(exercises: Dictionary(uniqueKeysWithValues: [
+private let exerciseLibrary = ExerciseLibrary(exercises: Dictionary(uniqueKeysWithValues: [
     Exercise(
         id: "back-squat", name: "Barbell Back Squat", primaryMuscle: "Quads / Glutes",
         formCues: [
@@ -437,7 +437,7 @@ let exerciseLibrary = ExerciseLibrary(exercises: Dictionary(uniqueKeysWithValues
 
 // MARK: - The PCOS Plan — Sunday (Lower Body, Self-led)
 
-let sundayWorkout = Workout(
+private let sundayWorkout = Workout(
     day: .sunday,
     title: "Lower Body Strength",
     subtitle: "Self-led",
@@ -487,7 +487,7 @@ let sundayWorkout = Workout(
 
 // MARK: - Monday (Glutes & Core)
 
-let mondayWorkout = Workout(
+private let mondayWorkout = Workout(
     day: .monday,
     title: "Glutes & Core",
     subtitle: "Self-led",
@@ -537,7 +537,7 @@ let mondayWorkout = Workout(
 
 // MARK: - Tuesday (Upper Body)
 
-let tuesdayWorkout = Workout(
+private let tuesdayWorkout = Workout(
     day: .tuesday,
     title: "Upper Body / Lifting Technique",
     subtitle: "Self-led",
@@ -574,7 +574,7 @@ let tuesdayWorkout = Workout(
 
 // MARK: - Wednesday (Full Body Calisthenics)
 
-let wednesdayWorkout = Workout(
+private let wednesdayWorkout = Workout(
     day: .wednesday,
     title: "Full Body Conditioning",
     subtitle: "Calisthenics-style",
@@ -621,7 +621,7 @@ let wednesdayWorkout = Workout(
 
 // MARK: - Thursday (HIIT)
 
-let thursdayWorkout = Workout(
+private let thursdayWorkout = Workout(
     day: .thursday,
     title: "HIIT + Conditioning",
     subtitle: "Treadmill intervals + finishers",
@@ -659,11 +659,18 @@ let thursdayWorkout = Workout(
 
 // MARK: - Plan registry
 
-let pcosPlan: [Weekday: Workout] = [
-    .sunday: sundayWorkout,
-    .monday: mondayWorkout,
-    .tuesday: tuesdayWorkout,
-    .wednesday: wednesdayWorkout,
-    .thursday: thursdayWorkout
-    // Friday & Saturday are rest / active recovery — no structured session
-]
+extension WorkoutPlan {
+    static let varsha = WorkoutPlan(
+        id: "varsha",
+        name: "Varsha",
+        workouts: [
+            .sunday:    sundayWorkout,
+            .monday:    mondayWorkout,
+            .tuesday:   tuesdayWorkout,
+            .wednesday: wednesdayWorkout,
+            .thursday:  thursdayWorkout
+            // Friday & Saturday are rest / active recovery — no structured session
+        ],
+        library: exerciseLibrary
+    )
+}

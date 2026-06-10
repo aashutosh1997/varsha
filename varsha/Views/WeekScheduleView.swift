@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct WeekScheduleView: View {
-    private let library = exerciseLibrary
-    private let plan = pcosPlan
+    let plan: WorkoutPlan
+
+    init(plan: WorkoutPlan = .varsha) {
+        self.plan = plan
+    }
 
     var body: some View {
         NavigationStack {
@@ -26,9 +29,9 @@ struct WeekScheduleView: View {
 
                 Section("Workouts") {
                     ForEach(Weekday.allCases) { day in
-                        if let workout = plan[day] {
+                        if let workout = plan.workouts[day] {
                             NavigationLink {
-                                WorkoutDetailView(workout: workout, library: library)
+                                WorkoutDetailView(workout: workout, library: plan.library)
                             } label: {
                                 WorkoutRow(day: day, workout: workout)
                             }
@@ -43,7 +46,7 @@ struct WeekScheduleView: View {
                         .font(.caption).foregroundStyle(.secondary)
                 }
             }
-            .navigationTitle("Varsha")
+            .navigationTitle(plan.name)
         }
     }
 }
